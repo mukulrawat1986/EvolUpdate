@@ -1,0 +1,36 @@
+{% extends "contributors/base.html" %}
+
+{% block title %}Evolution Update: Contributors{% endblock %}
+
+{% block content %}
+<br>
+
+<div id="allcontribs">
+
+{% if contributor_list %}
+    <ul>
+    {% for c in contributor_list %}
+    <div id="allcontrib">
+        <div id="contribpic">
+            <img src="{{ c.picture.url }}" height="125" width="94"/>
+        </div>
+        <div id="contribtext">
+            <div id="contribname">
+               <strong> {{c.name }} </strong>
+            </div>
+            <div id="contribtitle">
+               <em> {{c.title}} </em>
+            </div>
+            <div id="contribdescription">
+                {{c.description}}
+            </div>
+    </div>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No contributors are available.</p>
+    
+</div>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "contributors/base.html" %}
+
+{% block title %}{{current_article.mytitle}}{% endblock %}
+
+{% block content %}
+
+<div id="articlecolumn">
+
+<div id="articledate">
+    {{current_article.pub_date|date:"F j, Y"}}
+</div>
+
+<div id="articletitle">
+    <strong>{{current_article.mytitle}}</strong>
+</div>
+
+<div id="articleauthor">
+    <em>Update provided by: {{current_article.contrib}}</em>
+</div>
+
+
+<div id="articleimage">
+    <img src="{{ current_article.articlepic.url }}" width="500" height="333">
+</div>
+
+<div id="articlesummary">
+    <strong>{{current_article.summary}}</strong>
+</div>
+<br/>
+<div id="articletext">
+    {{current_article.article|linebreaksbr}}
+</div>
+</br>
+<em>Source: <a href="{{current_article.reference}}">{{current_article.title}}</a></em>
+
+</div>
+
+ {% endblock %}

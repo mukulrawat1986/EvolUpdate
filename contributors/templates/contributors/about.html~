@@ -1,0 +1,22 @@
+{% extends "contributors/base.html" %}
+{% load staticfiles %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div id="aboutimage">
+<img src="{% static "contributors/heron.jpg" %}" alt="heron"  height="600" width="360"/>
+</div>
+<div id="aboutcontent">
+<strong> Welcome to Evolution Update.</strong>
+</br>
+</br>
+Evolution Update is a collaborative effort to bring recent advances in evolution to the public.  
+We believe that evolution in research is exciting and should not just be shared between scientists.
+However, primary evolution research is very complicated and hard to understand for the average person.
+</br>
+</br>
+By sumarizing recent advances in evolution, we hope to bridge the gap between scientists and science-enthusiasts.  
+Check our site regularly to see updates on evolution that you will be able to comprehend and share with your friends.
+We hope you enjoy the content and learn a little evolution while you are here!
+</div>
+{% endblock %}

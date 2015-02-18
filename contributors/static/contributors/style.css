@@ -1,0 +1,295 @@
+
+
+a:link {
+    text-decoration: none;
+    color:Black;
+}
+
+a:visited {
+    text-decoration: none;
+    color:Black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    height: 90px;
+	border-bottom: 2px solid black;
+}
+
+#logo {
+    margin-left: 99px;
+    padding-top: 10px;
+}
+
+#line {
+    height: 5px;
+	border-bottom: 1px solid black;
+	}
+
+#midsection {
+    margin-top:10px;
+    margin-left: 110px;
+    width:900px;
+}
+
+#subheaders{
+    width:900px;
+}
+
+#subheaders ul {
+    margin-top:10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline;
+    max-height: 12px;
+
+}
+#subheaders ul a {
+    background-color: black;
+    display: inline-block;
+    width:129px;
+    text-decoration: none;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right:4px;
+}
+
+#subheaders ul a:hover {
+ background-color: grey;
+}
+
+#subheaders ul a div{
+    color:white;
+}
+
+#newarticle {
+width:900px;
+}
+#largeimage {
+    display:inline-block;
+    width:500px;
+}
+
+#largetext{
+    padding-left: 40px;
+    display:inline-block;
+    width:355px;
+    vertical-align:top;
+}
+
+#smallstuff ul {
+    margin-top:5px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline;
+    max-height: 12px;
+}
+#smallstuff ul a {
+    vertical-align:top;
+    display: inline-block;
+    width:190px;
+    text-decoration: none;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right: 20px;
+    margin-right:4px;
+    }
+    
+#smallstuff ul a:hover {
+    text-decoration: underline;
+}
+
+#smallstuff ul a img {
+
+    }
+
+#seen {
+    width:350px;
+    display:inline-block;
+    vertical-align:top;
+
+
+}
+
+#seentitle{
+    background-color: black;
+    width:350px;
+    color:white;
+    font-size:1.3em;
+    padding-left: 15px;
+    margin-bottom:5px;
+}
+
+#seendescription{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+#innerline{
+    width: 33%;
+    height: 1px;
+    margin: 0px auto;
+    border-bottom: 1px solid black;
+}
+
+#innerline:last-of-type {
+    bottom-border:200px solid black;
+}
+
+#monthly {
+ display:inline-block;
+ width:500px;
+ vertical-align:top;
+ margin-left:20px;
+}
+
+#monthlyimage {
+ display:inline-block;
+ vertical-align:top;
+}
+
+#monthlytitle {
+    font-size:1.3em;
+    font-style: italic;
+    margin-bottom:7px;
+
+}
+
+#monthlytext {
+ margin-left:20px;
+ display:inline-block;
+ vertical-align:top;
+ width:250px;
+ text-align:justify;
+}
+
+
+#leftheader {
+    background-color: #3366FF;
+    color:White;
+}
+#aboutimage {
+    display:inline-block;
+    vertical-align:top;
+    margin-top:45px;
+
+}
+#aboutcontent {
+    margin-top:40px;
+    margin-left:45px;
+    display:inline-block;
+    width:370px;
+    text-align:justify;
+    }
+    
+#articlecolumn {
+    width:650px;
+
+}
+
+#articletitle {
+    margin-top:10px;
+    margin-bottom:15px;
+    font-size:1.8em;
+}
+
+#articledate {
+margin-top:20px;
+margin-left:0px;
+font-size:0.8em;
+text-decoration: underline;
+}
+
+#articleauthor {
+font-size:0.8em;
+}
+
+
+#articleimage {
+    padding-left: 75px;
+    margin-top:20px;
+    margin-bottom:30px;
+    display: block;
+}
+
+#articlesummary {
+    color: #383838;
+}
+
+#articletext {
+}
+
+#contribpic{
+vertical-align:top;
+display:inline-block;
+margin-bottom:20px;
+margin-top:5px;
+}
+
+#contribtext{
+margin-left:25px;
+margin-bottom:20px;
+margin-top:5px;
+vertical-align:top;
+width:380px;
+display:inline-block;
+}
+
+#contribname{
+font-size:1.3em;
+margin-bottom:2px;
+}
+
+#contribtitle{
+margin-bottom:2px;
+}
+
+#contribdescription{
+}
+
+#formtext {
+margin-top:50px;
+margin-bottom:10px;
+width:800px;
+}
+
+#formbox {
+}
+
+
+
+#archived-image{
+vertical-align:top;
+display:inline-block;
+margin-bottom:20px;
+margin-top:30px;
+}
+
+#archived-text{
+margin-left:25px;
+margin-bottom:20px;
+margin-top:35px;
+vertical-align:top;
+width:550px;
+display:inline-block;
+}
+
+#archived-summary{
+margin-top:4px;
+{
+
+
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top=50px
+}

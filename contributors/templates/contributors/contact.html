@@ -1,0 +1,20 @@
+{% extends "contributors/base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+
+<div id="formtext">
+For all comments and inquiries, please send us a message using the form below.
+Remember to provide contact information if you would like a response.
+</div>
+<div id="formbox">
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Send" />
+</form>
+</div>
+{% endblock %}
