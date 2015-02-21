@@ -111,20 +111,22 @@ width:900px;
     }
 
 #seen {
-    width:350px;
+    width:320px;
     display:inline-block;
     vertical-align:top;
+    margin-right:30px;
 
 
 }
 
 #seentitle{
     background-color: black;
-    width:350px;
+    width:320px;
     color:white;
-    font-size:1.3em;
+    font-size:1.15em;
     padding-left: 15px;
     margin-bottom:5px;
+    margin-right:30px;
 }
 
 #seendescription{
@@ -156,7 +158,8 @@ width:900px;
 }
 
 #monthlytitle {
-    font-size:1.3em;
+    width:270px;
+    font-size:1.15em;
     font-style: italic;
     margin-bottom:7px;
 

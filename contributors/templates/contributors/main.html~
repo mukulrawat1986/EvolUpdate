@@ -6,11 +6,11 @@
 {% if newest_article_list %}
     <div style="height:40px;"></div>
     <div id="largeimage">
-        <a href="/article/{{ newest_article_list.id }}"><img src="{{ newest_article_list.articlepic.url}}" height="333" width="500">
+        <a href="/article/{{ newest_article_list.id }}"><img src="{{ newest_article_list.articlepic.url}}" height="333" width="500"></a>
     </div>
 
     <div id="largetext">
-        <h2> {{newest_article_list.mytitle }}</a></h2>
+        <h2> <a href="/article/{{ newest_article_list.id }}">{{newest_article_list.mytitle }}</a></h2>
         {{newest_article_list.summary}}
      </div>
 {% else %}
@@ -36,7 +36,7 @@
 <div style="height:40px;"></div>
 <div id="seen">
     <div id="seentitle">
-        <strong>Latest Evolution Research:</strong>
+        <strong>Latest Evolution Research (original sources):</strong>
     </div>
     {% if recent_seen_list %}
 {% for article in recent_seen_list %}
@@ -59,7 +59,7 @@
 
 <div id="monthly">
     <div id="monthlyimage">
-        <img src= "{{ newest_monthly.thismonthpic.url }}" height="300" width="220"/>
+        <img src= "{{ newest_monthly.thismonthpic.url }}" height="300" width="200"/>
     </div>
     <div id="monthlytext">
        <div id="monthlytitle"><strong>This month in evolution:</strong></div><div id="innerline">&nbsp;</div>
