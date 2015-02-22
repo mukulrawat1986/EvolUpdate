@@ -12,7 +12,7 @@
     {% for c in contributor_list %}
     <div id="allcontrib">
         <div id="contribpic">
-            <img src="{{ c.picture.url }}" height="125" width="94"/>
+            <img src="{{ c.picture.url }}" height="100" width="75"/>
         </div>
         <div id="contribtext">
             <div id="contribname">

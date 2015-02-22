@@ -21,7 +21,7 @@ def mailinglist(request):
     return HttpResponse("This is my mailing list page")
 
 def contributors(request):
-    contributor_list=Contributor.objects.order_by('rank')
+    contributor_list=Contributor.objects.order_by('name')
     context={'contributor_list': contributor_list,}
     print context
     return render(request, 'contributors/contributors.html', context)

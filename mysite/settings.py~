@@ -101,6 +101,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 #.............. AWS ..............
 
+AWS_PRELOAD_METADATA = True
+
 AWS_STORAGE_BUCKET_NAME = 'christopher-bucket2' # or the bucket name you gave
 
 AWS_ACCESS_KEY_ID = 'AKIAJ3A5YERJI5ILWVGA'
