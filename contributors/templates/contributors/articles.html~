@@ -24,11 +24,14 @@
 </div>
 
 <div id="articlesummary">
-    strong>{{current_article.summary}}</strong>
+    <strong>{{current_article.summary}}</strong>
 </div>
 <br/>
 <div id="articletext">
-{   {current_article.article|linebreaksbr}}
+{% autoescape off %}
+test123.
+    {{current_article.article|linebreaksbr}}
+{% endautoescape %}
 </div>
 </br>
 <em>Source: <a href="{{current_article.reference}}">{{current_article.title}}</a></em>

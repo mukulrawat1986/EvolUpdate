@@ -28,7 +28,9 @@
 </div>
 <br/>
 <div id="articletext">
+{% autoescape off %}
     {{current_article.article|linebreaksbr}}
+{% endautoescape %}
 </div>
 </br>
 <em>Source: <a href="{{current_article.reference}}">{{current_article.title}}</a></em>
