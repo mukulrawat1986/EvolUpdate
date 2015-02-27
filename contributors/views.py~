@@ -21,14 +21,19 @@ def mailinglist(request):
     return HttpResponse("This is my mailing list page")
 
 def contributors(request):
-    contributor_list=Contributor.objects.order_by('name')
+    contributor_list=Contributor.objects.order_by('rank')
     context={'contributor_list': contributor_list,}
     print context
     return render(request, 'contributors/contributors.html', context)
 
 def article(request, article_id):
     current_article=Article.objects.get(id=article_id)
-    context={'current_article': current_article }
+    all_recent_article_list=Article.objects.order_by('-pub_date')[:5]
+    for article in all_recent_article_list:
+        if article.id == current_article.id:
+                print "yes" 
+                #all_recent_article_list=Article.objects.exclude(article_id=9)
+    context={'current_article': current_article, 'all_recent_article_list': all_recent_article_list }
     return render(request, 'contributors/articles.html', context)
 
 def about(request):

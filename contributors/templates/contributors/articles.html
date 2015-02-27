@@ -34,7 +34,26 @@
 </div>
 </br>
 <em>Source: <a href="{{current_article.reference}}">{{current_article.title}}</a></em>
+<br><br><br>
+</div>
 
+
+<div id="extra-articles">
+{% if all_recent_article_list %}
+
+    <div id="smallstuff">
+    <ul>
+    {% for article in all_recent_article_list %}
+            <a href="/article/{{ article.id }}">
+                <img src="{{ article.articlepic.url }}" height="123" width="185"><strong><div style="text-align:left;">{{article.mytitle}}</div></strong>
+            </a>
+    {% endfor %}
+
+    </ul>
+    </div>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
 </div>
 
  {% endblock %}

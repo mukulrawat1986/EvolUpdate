@@ -36,7 +36,7 @@
 <div style="height:40px;"></div>
 <div id="seen">
     <div id="seentitle">
-        <strong>Latest Evolution Research (original sources):</strong>
+        <strong>Latest Evolution Research:</strong>
     </div>
     {% if recent_seen_list %}
 {% for article in recent_seen_list %}

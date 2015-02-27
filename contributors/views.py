@@ -28,7 +28,11 @@ def contributors(request):
 
 def article(request, article_id):
     current_article=Article.objects.get(id=article_id)
-    context={'current_article': current_article }
+    all_recent_article_list=Article.objects.order_by('-pub_date')[:4]
+    for article in all_recent_article_list:
+        if article.id == current_article.id: 
+            all_recent_article_list=Article.objects.order_by('-pub_date')[4:8]
+    context={'current_article': current_article, 'all_recent_article_list': all_recent_article_list }
     return render(request, 'contributors/articles.html', context)
 
 def about(request):

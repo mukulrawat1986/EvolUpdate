@@ -150,7 +150,6 @@ width:900px;
  width:500px;
  vertical-align:top;
  margin-left:20px;
- border: 2px red solid;
 }
 
 #monthlyimage {
@@ -163,7 +162,6 @@ width:900px;
     font-size:1.15em;
     font-style: italic;
     margin-bottom:7px;
-    border: 2px black solid;
 
 }
 
