@@ -16,6 +16,7 @@ a:hover {
 
 #header {
     height: 90px;
+    width: 1120px;
 	border-bottom: 2px solid black;
 }
 
@@ -27,12 +28,14 @@ a:hover {
 #line {
     height: 5px;
 	border-bottom: 1px solid black;
+    width:1120px;
 	}
 
 #midsection {
     margin-top:10px;
     margin-left: 110px;
     width:900px;
+    padding-right:110px;
 }
 
 #subheaders{

@@ -26,6 +26,7 @@ class ThisMonthInEvolution(models.Model):
 class Contributor(models.Model):
     name=models.CharField(max_length=200)
     title=models.CharField(max_length=1000, blank=True)
+    urlstring=models.CharField(max_length=200, blank=True)
     rank=models.IntegerField(blank=True)
     description=models.TextField()
     picture=models.ImageField(blank=True, upload_to='ContribImages')

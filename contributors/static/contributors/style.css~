@@ -16,6 +16,7 @@ a:hover {
 
 #header {
     height: 90px;
+    width: 1120px;
 	border-bottom: 2px solid black;
 }
 
@@ -33,6 +34,7 @@ a:hover {
     margin-top:10px;
     margin-left: 110px;
     width:900px;
+    padding-right:110px;
 }
 
 #subheaders{
@@ -286,8 +288,11 @@ display:inline-block;
 
 #archived-summary{
 margin-top:4px;
-{
+}
 
+#archived-article{
+font-size:1.15em;
+}
 
 
 img.center {

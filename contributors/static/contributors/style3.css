@@ -32,7 +32,8 @@ a:hover {
 #midsection {
     margin-top:10px;
     margin-left: 110px;
-    width:900px;
+    margin-right:110px;
+    width:900px
 }
 
 #subheaders{
