@@ -12,11 +12,11 @@
     {% for c in contributor_list %}
     <div id="allcontrib">
         <div id="contribpic">
-            <img src="{{ c.picture.url }}" height="100" width="75"/>
+            <a href="/contributor/{{ c.urlstring }}"><img src="{{ c.picture.url }}" height="100" width="75"/></a>
         </div>
         <div id="contribtext">
             <div id="contribname">
-               <strong> {{c.name }} </strong>
+               <strong> <a href="/contributor/{{ c.urlstring }}">{{c.name }} </a></strong>
             </div>
             <div id="contribtitle">
                <em> {{c.title}} </em>

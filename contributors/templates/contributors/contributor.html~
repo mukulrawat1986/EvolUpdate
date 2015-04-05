@@ -1,0 +1,59 @@
+{% extends "contributors/base.html" %}
+
+{% block title %}Contributors{% endblock %}
+
+{% block content %}
+<br>
+
+
+<div id="allcontribs">
+
+{% if current_contributor %}
+    <ul>
+    <div id="allcontrib">
+        <div id="contribpic">
+            <img src="{{ current_contributor.picture.url }}" height="247" width="185"/>
+        </div>
+        <div id="contribtext2">
+            <div id="contribname">
+               <strong> {{current_contributor.name }} </strong>
+            </div>
+            <div id="contribtitle">
+               <em> {{current_contributor.title}} </em>
+            </div>
+            <div id="contribdescription">
+                {{current_contributor.description}}
+            </div>
+    </div>
+    </ul>
+{% else %}
+    <p>No contributors are available.</p>
+    
+</div>
+{% endif %}
+
+{% if contributor_articles %}
+    <ul>
+    {% for article in contributor_articles %}
+    <div id="articleblock">
+        <div id="archived-image">
+            <a href="/article/{{ article.id }}"><img src="{{ article.articlepic.url }}" height="123" width="185"></a>
+        </div>
+        <div id="archived-text">
+        <div id="archived-article"> 
+            <a href="/article/{{ article.id }}"><strong>{{article.mytitle }}</strong></a>
+        </div>
+        <div id="archived-summary">
+        {{article.summary}}
+        </div>
+        </div>
+        
+    </div>
+    
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Articles are currently available.</p>
+{% endif %}
+
+{% endblock %}

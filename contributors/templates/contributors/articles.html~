@@ -15,7 +15,7 @@
 </div>
 
 <div id="articleauthor">
-    <em>Update provided by: {{current_article.contrib}}</em>
+    <em>Update provided by: <strong><a href="/article/{{ current_contributor.urlstring }}">{{current_article.contrib}}</strong></a></em>
 </div>
 
 

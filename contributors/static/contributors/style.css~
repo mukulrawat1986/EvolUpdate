@@ -28,6 +28,7 @@ a:hover {
 #line {
     height: 5px;
 	border-bottom: 1px solid black;
+    width:1120px;
 	}
 
 #midsection {
@@ -244,6 +245,15 @@ margin-bottom:20px;
 margin-top:5px;
 vertical-align:top;
 width:380px;
+display:inline-block;
+}
+
+#contribtext2{
+margin-left:25px;
+margin-bottom:20px;
+margin-top:5px;
+vertical-align:top;
+width:549px;
 display:inline-block;
 }
 

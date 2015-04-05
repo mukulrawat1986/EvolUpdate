@@ -1,6 +1,6 @@
 {% extends "contributors/base.html" %}
 
-{% block title %}Evolution Update: Contributors{% endblock %}
+{% block title %}Contributors{% endblock %}
 
 {% block content %}
 <br>
@@ -12,10 +12,10 @@
     {% for c in contributor_list %}
     <div id="allcontrib">
         <div id="contribpic">
-            <img src="{{ c.picture.url }}" height="100" width="75"/>
+            <a href="/contributor/{{ c.urlstring }}"><img src="{{ c.picture.url }}" height="100" width="75"/></a>
         </div>
         <div id="contribtext">
-            <div id="contribname">
+            <a href="/contributor/{{ c.urlstring }}"><div id="contribname"></a>
                <strong> {{c.name }} </strong>
             </div>
             <div id="contribtitle">
